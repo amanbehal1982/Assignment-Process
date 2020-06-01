@@ -1,0 +1,226 @@
+ul, ul li, ol, ol li{
+    list-style: none;
+    margin:0;
+}
+a, input, label, button{
+    outline: none !important;
+}
+img{
+    max-width:100%;
+    height: auto;
+    border: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: normal;
+}
+header{
+    padding:21px 0 31px;
+}
+.banner-box{    
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: cover;
+    padding-bottom:222px;
+    position: relative;
+    padding-top: 125px;
+    height: 905px;
+}
+.banner-box.banner-img-01{
+    background-image: url('../images/banner-image-01.jpg');
+}
+.banner-box.banner-img-02{
+    background-image: url('../images/banner-image-02.jpg');
+}
+.banner-box.banner-img-03{
+    background-image: url('../images/banner-image-03.jpg');
+}
+.hidden-part{
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    width:100%;
+    background: rgba(0,0,0,0.3);
+}
+.banner-box .form-check{
+    padding-left:15px;
+}
+.slider-outer{
+    position: relative;
+}
+.slider.slider-area{
+    position: relative;
+}
+.slick-dots{
+    padding:0;
+}
+.slick-dots li{
+    display: none;
+}
+.slick-dots li.slick-active{
+    display: block;
+}
+.slick-dots li{
+    color:#fff;
+}
+.slick-dots li a{
+    color:#fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+.slider-outer .slide-part{
+
+}
+.slider-outer .slide-part h2{
+    font-size: 26px;
+    color:#fff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom:25px;
+}
+.slider-outer .slide-part h6{
+    color:#fff;
+    margin-bottom:8px;
+    letter-spacing: 1px;
+    padding-top:60px;
+}
+.slider-outer .slide-part .form-check{
+    position:relative;
+    margin-top:30px;
+    margin-right:0;
+}
+.slider-outer .slide-part .form-check .form-check-input{
+    position: absolute;
+    top:0; left:0;
+    opacity:0;
+    visibility: hidden;
+}
+.slider-outer .slide-part .form-check .form-check-label{
+    background: transparent;
+    width:100%;
+    height:73px;
+    text-align: center;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 23px;
+    border:2px solid #fff;
+    margin:0;
+    color:#fff;
+    padding:23px 11px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.slider-outer .slide-part .form-check .form-check-input:checked ~ label{
+    background: #fff;
+    color:#000;
+}
+.arrow-outer-box{
+    position: absolute;
+    bottom:100px;
+    left: 0;
+    width:100%;
+}
+.arrow-outer-box .slick-arrow{
+    width:160px;
+    height:54px;
+    font-size: 18px;
+    line-height:24px;
+    letter-spacing: 1px;
+    border:2px solid #272828;
+    text-align: center;
+    background: #272828;
+    padding:13px;
+    color:#fff;
+    transition: all 0.5s ease 0;
+    cursor: pointer;
+}
+.arrow-outer-box .slick-arrow .slick-next{
+}
+.arrow-outer-box .slick-arrow:hover{
+    background: transparent;
+    color:#fff;
+    border-color:#fff;
+}
+.arrow-outer-box .slick-arrow.slick-disabled{
+    display: none !important;
+}
+.dots-outer-box{
+    position: absolute;
+    top: 125px;
+    left:0;
+    width:100%;
+}
+
+@media (max-width: 991.98px) {
+    .slider-outer .slide-part .form-check .form-check-label{
+        height: auto;
+        font-size:16px;
+        padding:18px 11px;
+    }
+    .banner-box.banner-img-03{  
+        background-position: center top;
+    }
+ }
+
+ @media (max-width: 767.98px) { 
+    .slider-outer .slide-part .form-check .form-check-label{
+        font-size:12px;
+        padding:12px 0;
+    }
+    .banner-box{
+        height:815px;
+    }
+    .arrow-outer-box .slick-arrow{
+        width:120px;
+        height: auto;
+        font-size: 14px;
+        padding:8px;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    header{
+        padding:15px 0;
+    }
+    .logo-part{
+        text-align: center;
+    }
+    .arrow-outer-box .slick-arrow{
+        height: auto;
+    }
+    .banner-box{
+        background-position: center top;
+        padding-top: 250px;
+        padding-bottom:150px;
+        height:870px;
+    }
+    .banner-box.banner-img-01{
+        background-position: left -170px top;
+    }
+    .banner-box .mobile-display{
+        margin-left:-5px;
+        margin-right:-5px;
+    }
+    .banner-box .mobile-display .form-check{
+        padding-left:5px;
+        padding-right:5px;
+    }
+    .slider-outer .slide-part .form-check .form-check-label{
+        font-size: 8px;
+        padding: 8px 0;
+    }
+    .dots-outer-box{
+        top:25px;
+    }
+    .arrow-outer-box .slick-arrow{
+        width:100px;
+        font-size:12px;
+    }
+    .arrow-outer-box{
+        bottom:65px;
+    }
+  }
